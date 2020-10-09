@@ -1,0 +1,15 @@
+show databases;
+create database practicedb;
+use practicedb;
+show tables;
+create table students (sid integer, sname char(20), age integer, course char(20));
+desc students;
+insert into students values (1,'Tom',21, 'mysql');
+insert into students values (2,'Jon',23,'Analytics');
+select * from students;
+alter table students change column sid std_id integer;
+alter table students modify column sname char (20);
+alter table students rename mystudents;
+alter table students add column marks integer;
+alter table students drop column age;
+show tables;
